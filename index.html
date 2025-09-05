@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pet Nanny Concierge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- Header / Navigation -->
+    <header class="site-header" data-section="header">
+      <div class="container header-inner">
+        <a class="brand" href="#home">
+          <span class="brand-mark">🐾</span>
+          <span class="brand-text">Pet Nanny Concierge</span>
+        </a>
+        <nav class="nav" aria-label="Primary Navigation">
+          <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false">☰</button>
+          <ul id="nav-menu" class="nav-menu">
+            <li><a href="#checkin">Check-in</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#why">Why Us</a></li>
+            <li><a href="#pricing">Packages</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact" class="btn btn-primary btn-sm">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="hero" data-section="hero">
+      <div class="hero-wave-top" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none" focusable="false">
+          <path d="M0,64 C160,96 320,96 480,80 C640,64 800,32 960,37.3 C1120,42.7 1280,85.3 1440,106.7 L1440,0 L0,0 Z" fill="#ffffff" opacity="0.9"></path>
+        </svg>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-copy hero-card">
+          <h1 class="hero-title">Pet Nanny Concierge</h1>
+          <p class="hero-subtitle">Luxury 24-Hour In-Home Pet Sitting &amp; Medical Care</p>
+          <p class="hero-subline">Personalized Care • Medical Expertise • Total Peace of Mind</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#checkin">Request booking</a>
+            <a class="btn btn-outline" href="#about">Learn more</a>
+          </div>
+        </div>
+        <div class="hero-media"></div>
+      </div>
+      <div class="hero-wave-bottom" aria-hidden="true">
+        <svg viewBox="0 0 1440 160" preserveAspectRatio="none" focusable="false">
+          <path d="M0,96 C120,110 240,124 360,118 C480,112 600,80 720,82.7 C840,85.3 960,117.3 1080,122.7 C1200,128 1320,117.3 1440,106.7 L1440,160 L0,160 Z" fill="#ffffff" fill-opacity="0.9"></path>
+          <path d="M0,120 C120,134 240,148 360,142 C480,136 600,104 720,106.7 C840,109.3 960,141.3 1080,146.7 C1200,152 1320,141.3 1440,130.7 L1440,160 L0,160 Z" fill="#ffffff"></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Placeholder sections to be filled next -->
+    <main id="content" class="content">
+      <section id="checkin" class="section section-checkin" data-section="checkin">
+        <div class="container checkin-inner">
+          <div class="checkin-copy">
+            <h2 class="section-title">Take Care of Your Pets</h2>
+            <p class="section-lead">Schedule boarding or daycare in seconds.</p>
+            <ul class="checkin-benefits">
+              <li>Open 7 days</li>
+              <li>Vet-on-call</li>
+              <li>Photo updates</li>
+            </ul>
+            <div class="checkin-media" role="img" aria-label="Booking illustration"></div>
+          </div>
+          <form class="checkin-form" aria-label="Quick check-in form">
+            <div class="field">
+              <label for="petName">Pet name</label>
+              <input id="petName" name="petName" type="text" placeholder="e.g., Muffin" required />
+            </div>
+            <div class="field-group">
+              <div class="field">
+                <label for="service">Service</label>
+                <select id="service" name="service" required>
+                  <option value="Boarding">Boarding</option>
+                  <option value="Daycare">Daycare</option>
+                  <option value="Grooming">Grooming</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="date">Date</label>
+                <input id="date" name="date" type="date" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="notes">Notes</label>
+              <textarea id="notes" name="notes" rows="3" placeholder="Diet, meds, quirks..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Request booking</button>
+          </form>
+        </div>
+      </section>
+      <section id="about" class="section section-about" data-section="about">
+        <div class="container about-inner">
+          <header class="section-header">
+            <h2 class="section-title">About Pet Nanny Concierge</h2>
+            <p class="section-lead">Because Your Pets Deserve Nothing Less Than the Best</p>
+          </header>
+          <p class="about-text">At Pet Nanny Concierge, we know your pets are family — and we treat them that way. We specialize in 24-hour, in-home pet sitting designed for pet parents who want constant care, expert medical support, and premium companionship for their furry loved ones. Whether it’s a playful pup, a shy senior, or a pet with medical needs, we ensure their happiness, safety, and well-being while keeping them in the comfort of their own home.</p>
+          <div class="feature-grid">
+            <article class="feature-card" data-accent="peach">
+              <h3>24/7 Presence</h3>
+              <p>Constant companionship so your pets are never alone.</p>
+            </article>
+            <article class="feature-card" data-accent="mint">
+              <h3>Medical Expertise</h3>
+              <p>Skilled with injections, meds, and post-op care.</p>
+            </article>
+            <article class="feature-card" data-accent="lemon">
+              <h3>Stress-Free</h3>
+              <p>Care at home with familiar routines and spaces.</p>
+            </article>
+            <article class="feature-card" data-accent="sky">
+              <h3>Daily Updates</h3>
+              <p>Photos and videos so you’re always in the loop.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="cat-boarding" class="section section-feature" data-section="cat-boarding">
+        <div class="container feature-split feature-left">
+          <div class="feature-media">
+            <div class="blob blob-peach"></div>
+            <div class="feature-photo" aria-label="Cat boarding"></div>
+          </div>
+          <div class="feature-copy">
+            <h2 class="section-title">In-Home Care for Cats</h2>
+            <p class="section-lead">Calm, comfortable care in their own home — litter, meals, and cuddles.</p>
+            <ul class="list">
+              <li>Routine feeding, fresh water, and litter care</li>
+              <li>Playtime and enrichment tailored to their mood</li>
+              <li>Daily photo and video updates</li>
+            </ul>
+            <a class="btn btn-outline" href="#checkin">Request care</a>
+          </div>
+        </div>
+      </section>
+      <section id="dog-kennels" class="section section-feature" data-section="dog-kennels">
+        <div class="container feature-split feature-right">
+          <div class="feature-copy">
+            <h2 class="section-title">In-Home Care for Dogs</h2>
+            <p class="section-lead">Walks, enrichment, and overnight companionship — no kennels.</p>
+            <ul class="list">
+              <li>Potty breaks and neighborhood walks</li>
+              <li>24/7 companionship and bedtime routines</li>
+              <li>Medication and special-needs support as instructed</li>
+            </ul>
+            <a class="btn btn-outline" href="#checkin">Request care</a>
+          </div>
+        </div>
+      </section>
+      <section id="why" class="section section-services" data-section="why-choose">
+        <div class="container services-inner">
+          <header class="section-header">
+            <h2 class="section-title">Why Choose Pet Nanny Concierge</h2>
+            <p class="section-lead">We provide more than care — we provide peace of mind.</p>
+          </header>
+          <div class="services-grid">
+            <article class="service">
+              <h3>24/7 Companionship</h3>
+              <p>Your pets are never left alone. Day and night comfort.</p>
+            </article>
+            <article class="service">
+              <h3>Specialized Medical Expertise</h3>
+              <p>Insulin injections, eye treatments, meds, and senior support.</p>
+            </article>
+            <article class="service">
+              <h3>Stress-Free, Familiar Care</h3>
+              <p>No kennels or cages — care at home where pets feel safe.</p>
+            </article>
+            <article class="service">
+              <h3>Daily Photo &amp; Video</h3>
+              <p>Frequent updates so you always feel connected.</p>
+            </article>
+            <article class="service">
+              <h3>Trusted &amp; Compassionate</h3>
+              <p>Reliable professionals who love your pets like you do.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="pricing" class="section section-pricing" data-section="pricing">
+        <div class="container pricing-inner">
+          <header class="section-header">
+            <h2 class="section-title">Our 24-Hour Care Packages</h2>
+            <p class="section-lead">Personalized care, transparent pricing.</p>
+          </header>
+          <div class="pricing-grid">
+            <article class="plan">
+              <h3>24-Hour Care</h3>
+              <div class="price"><span class="currency">$</span>100</div>
+              <ul>
+                <li>24-hour presence in your home</li>
+                <li>Feeding, fresh water, and treats on schedule</li>
+                <li>Walks, potty breaks, and enrichment playtime</li>
+                <li>Light grooming; mail collection &amp; plant watering</li>
+                <li>Daily photo updates</li>
+                <li><strong>Dogs:</strong> $100/day</li>
+                <li><strong>Cats:</strong> $65/day (up to 2)</li>
+                <li>+$25 per additional pet</li>
+              </ul>
+              <a href="#checkin" class="btn btn-outline">Book 24-Hour Care</a>
+            </article>
+            <article class="plan">
+              <h3>Cats Care (up to 2)</h3>
+              <div class="price"><span class="currency">$</span>65</div>
+              <ul>
+                <li>24-hour presence in your home</li>
+                <li>Feeding, fresh water, and litter care</li>
+                <li>Playtime and enrichment</li>
+                <li>Daily photo updates</li>
+                <li>+$25 per additional pet</li>
+              </ul>
+              <a href="#checkin" class="btn btn-outline">Book Cat Care</a>
+            </article>
+            <article class="plan plan-featured">
+              <div class="badge">Medical</div>
+              <h3>Medical &amp; Special Needs Care</h3>
+              <div class="price"><span class="currency">$</span>150</div>
+              <ul>
+                <li>Insulin administration &amp; glucose monitoring</li>
+                <li>Eye drops, ointments, and treatments</li>
+                <li>Oral meds, topical care &amp; injections</li>
+                <li>Post-surgical monitoring &amp; mobility assistance</li>
+                <li>Anxiety management and gentle companionship</li>
+                <li>Starting at $150/day</li>
+                <li>$25 for each additional pet</li>
+              </ul>
+              <a href="#checkin" class="btn btn-primary">Book Medical Care</a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section id="testimonials" class="section section-testimonials" data-section="testimonials">
+        <div class="container testimonials-split">
+          <div class="testi-copy">
+            <div class="eyebrow">Testimonials</div>
+            <h2 class="display-script">Our Furry Friends Say</h2>
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <h3 class="testi-title">Your pet massages were mesmerising</h3>
+            <p class="testi-body">Just wanted to let you know how blessed I have been to have you guys care for me over the past few years.</p>
+            <div class="reviewer">
+              <div class="avatar" role="img" aria-label="Jack Russell"></div>
+              <div>
+                <div class="name">JACK RUSSELL</div>
+                <div class="role">Dog</div>
+              </div>
+            </div>
+          </div>
+          <div class="testi-ratings">
+            <img class="testi-image" src="assets/images/testimonial.png" alt="Testimonial visual" />
+          </div>
+        </div>
+      </section>
+      <section id="latest" class="section section-latest" data-section="latest-items">
+        <div class="container latest-inner">
+          <header class="section-header">
+            <h2 class="section-title">Latest</h2>
+            <p class="section-lead">News, tips, and cutest pics.</p>
+          </header>
+          <div class="card-grid">
+            <article class="card">
+              <div class="card-media"></div>
+              <h3>Meet our new groomer</h3>
+              <p>Expert trims and spa days just got better.</p>
+            </article>
+            <article class="card">
+              <div class="card-media"></div>
+              <h3>5 enrichment games</h3>
+              <p>Keep your pet mentally active at home.</p>
+            </article>
+            <article class="card">
+              <div class="card-media"></div>
+              <h3>Weekend boarding deal</h3>
+              <p>Save on longer stays this month.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer" data-section="footer">
+      <div class="footer-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 140" preserveAspectRatio="none" focusable="false">
+          <path d="M0,64 C160,96 320,96 480,80 C640,64 800,32 960,37.3 C1120,42.7 1280,85.3 1440,106.7 L1440,0 L0,0 Z" fill="#ffffff" opacity="0.95"></path>
+        </svg>
+      </div>
+      <div class="footer-dog" aria-hidden="true"></div>
+      <div class="container footer-inner">
+        <div class="footer-grid">
+          <div class="footer-col footer-brand-block">
+            <div class="footer-logo">🐾 Pet Nanny Concierge</div>
+            <div class="footer-tag">In‑home pet sitting &amp; medical care</div>
+            <div class="footer-social">
+              <a href="#" aria-label="Twitter" class="social">t</a>
+              <a href="#" aria-label="Instagram" class="social">ig</a>
+              <a href="#" aria-label="Facebook" class="social">fb</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-title">About</h4>
+            <ul class="footer-list">
+              <li>PO BOX Collins Street West</li>
+              <li>(123) 456‑7890</li>
+              <li>Mon – Sun: 8AM – 8PM</li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="#dog-kennels">Dog Care</a></li>
+              <li><a href="#cat-boarding">Cat Care</a></li>
+              <li><a href="#pricing">Packages</a></li>
+            </ul>
+          </div>
+          <div class="footer-col newsletter-col">
+            <h4 class="footer-title">Newsletter</h4>
+            <form class="newsletter" onsubmit="event.preventDefault()">
+              <input type="email" class="news-input" placeholder="Your email" aria-label="Email" />
+              <button class="news-btn" type="submit">Subscribe</button>
+            </form>
+            <div class="footer-meta">© <span id="year"></span> All rights reserved.</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+  </html>
+
