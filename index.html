@@ -25,7 +25,7 @@
             <li><a href="#why">Why Us</a></li>
             <li><a href="#pricing">Packages</a></li>
             <li><a href="#testimonials">Reviews</a></li>
-            <li><a href="#contact" class="btn btn-primary btn-sm">Contact</a></li>
+            <li><a href="#checkin" class="btn btn-primary btn-sm">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -72,7 +72,7 @@
             </ul>
             <div class="checkin-media" role="img" aria-label="Booking illustration"></div>
           </div>
-          <form class="checkin-form" aria-label="Quick check-in form">
+          <form class="checkin-form" action="https://formspree.io/f/maqwnwnl" method="POST" aria-label="Quick check-in form">
             <div class="field">
               <label for="petName">Pet name</label>
               <input id="petName" name="petName" type="text" placeholder="e.g., Muffin" required />
@@ -146,6 +146,10 @@
       </section>
       <section id="dog-kennels" class="section section-feature" data-section="dog-kennels">
         <div class="container feature-split feature-right">
+          <div class="feature-media">
+            <div class="blob blob-sky"></div>
+            <div class="feature-photo" aria-label="Dog care"></div>
+          </div>
           <div class="feature-copy">
             <h2 class="section-title">In-Home Care for Dogs</h2>
             <p class="section-lead">Walks, enrichment, and overnight companionship — no kennels.</p>
@@ -249,11 +253,8 @@
             <h3 class="testi-title">Your pet massages were mesmerising</h3>
             <p class="testi-body">Just wanted to let you know how blessed I have been to have you guys care for me over the past few years.</p>
             <div class="reviewer">
-              <div class="avatar" role="img" aria-label="Jack Russell"></div>
-              <div>
-                <div class="name">JACK RUSSELL</div>
-                <div class="role">Dog</div>
-              </div>
+              <div class="name">JACK RUSSELL</div>
+              <div class="role">Dog</div>
             </div>
           </div>
           <div class="testi-ratings">
@@ -261,31 +262,7 @@
           </div>
         </div>
       </section>
-      <section id="latest" class="section section-latest" data-section="latest-items">
-        <div class="container latest-inner">
-          <header class="section-header">
-            <h2 class="section-title">Latest</h2>
-            <p class="section-lead">News, tips, and cutest pics.</p>
-          </header>
-          <div class="card-grid">
-            <article class="card">
-              <div class="card-media"></div>
-              <h3>Meet our new groomer</h3>
-              <p>Expert trims and spa days just got better.</p>
-            </article>
-            <article class="card">
-              <div class="card-media"></div>
-              <h3>5 enrichment games</h3>
-              <p>Keep your pet mentally active at home.</p>
-            </article>
-            <article class="card">
-              <div class="card-media"></div>
-              <h3>Weekend boarding deal</h3>
-              <p>Save on longer stays this month.</p>
-            </article>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <footer id="contact" class="site-footer" data-section="footer">
@@ -300,17 +277,11 @@
           <div class="footer-col footer-brand-block">
             <div class="footer-logo">🐾 Pet Nanny Concierge</div>
             <div class="footer-tag">In‑home pet sitting &amp; medical care</div>
-            <div class="footer-social">
-              <a href="#" aria-label="Twitter" class="social">t</a>
-              <a href="#" aria-label="Instagram" class="social">ig</a>
-              <a href="#" aria-label="Facebook" class="social">fb</a>
-            </div>
           </div>
           <div class="footer-col">
-            <h4 class="footer-title">About</h4>
+            <h4 class="footer-title">Location</h4>
             <ul class="footer-list">
-              <li>PO BOX Collins Street West</li>
-              <li>(123) 456‑7890</li>
+              <li>Naples, Florida 34105</li>
               <li>Mon – Sun: 8AM – 8PM</li>
             </ul>
           </div>
@@ -322,12 +293,9 @@
               <li><a href="#pricing">Packages</a></li>
             </ul>
           </div>
-          <div class="footer-col newsletter-col">
-            <h4 class="footer-title">Newsletter</h4>
-            <form class="newsletter" onsubmit="event.preventDefault()">
-              <input type="email" class="news-input" placeholder="Your email" aria-label="Email" />
-              <button class="news-btn" type="submit">Subscribe</button>
-            </form>
+          <div class="footer-col">
+            <h4 class="footer-title">Get in Touch</h4>
+            <a href="#checkin" class="btn btn-primary">Contact Me</a>
             <div class="footer-meta">© <span id="year"></span> All rights reserved.</div>
           </div>
         </div>

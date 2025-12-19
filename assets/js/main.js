@@ -41,3 +41,33 @@ document.addEventListener('click', function (e) {
   window.addEventListener('scroll', onScroll, { passive: true });
 })();
 
+// Scroll-triggered animations using Intersection Observer
+(function scrollAnimations() {
+  var animatedSections = document.querySelectorAll('.section-checkin, .section-about, .section-feature, .section-services, .section-pricing, .section-testimonials, .section-latest');
+  
+  if (!animatedSections.length || !('IntersectionObserver' in window)) {
+    // Fallback: just show everything
+    animatedSections.forEach(function(section) {
+      section.classList.add('in-view');
+    });
+    return;
+  }
+  
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        // Optional: stop observing once animated
+        // observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.15, // Trigger when 15% of section is visible
+    rootMargin: '0px 0px -50px 0px' // Trigger slightly before fully in view
+  });
+  
+  animatedSections.forEach(function(section) {
+    observer.observe(section);
+  });
+})();
+
